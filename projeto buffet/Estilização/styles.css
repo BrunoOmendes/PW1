@@ -45,7 +45,7 @@ menu{
     border-radius: 50%;
     font-size: 20px;
     background-color: transparent;
-    border: 1px solid #ffb300;
+    border: 1px solid #e0cea6;
     cursor: pointer;
     color: #ffb300;
     margin-right:5px ;
@@ -55,9 +55,10 @@ menu{
     font-size: 20px;
 }
 .sociais button:hover{
-    background-color: #ffb300;
+    background-color: #e0cea6;
     border: #ffb300;
-    color: #000;
+    color: #ffffff;
+    transition: .5s;
 }
 .bemvindo{
     background-image: url(../images/festa-buffet-de-casamento.png);
@@ -229,7 +230,7 @@ footer .linha1{
     width: 300px;
     height: 40px;
     background: transparent;
-    border: 2px solid #ffb300;
+    border: 2px solid #e0cea6;
     color: black;
     padding: 10px;
     outline: 0;
@@ -241,15 +242,16 @@ footer .linha1{
 .linha1 form input[type=submit]{
     width: 80px;
     height: 40px;
-    background-color:#ffb300;
+    background-color:#e0cea6;
     border: 0;
     cursor: pointer;
     transition: .2s;
 }
 .linha1 form input[type=submit]:hover{
-    background-color: black;
-    color: #ffb300;
-
+    background-color: #e0cea6;
+    border: #ffb300;
+    color: #ffffff;
+    transition: .5s;
 }
 footer .linha2{
     padding: 40px 0;
@@ -289,9 +291,10 @@ footer .linha2 .conteudofooter{
     transition: .2s;
 }
  .footersocial button:hover{
-    background-color: #ffb300;
+    background-color: #e0cea6;
     border: #ffb300;
-    color: #000;
+    color: #ffffff;
+    transition: .5s;
 }
 .linha3{
     padding-top: 40px;
