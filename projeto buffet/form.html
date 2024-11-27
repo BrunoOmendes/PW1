@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
     <link rel="stylesheet" href="/css/stylesform.css">
+    <script src="/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/69a72fc2bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <div class="container">
         <div class="form-image">
-            <img src="images/buffet-para-casamentos.png" alt="">
+            <div class="textoimagem">
+                <p>O custo do orçamento é de:</p>
+                <br />
+                <div class="spanorçamento"></div>
+                <p><span id="orcamento"></span></p>
+            </div>
         </div>
+
         <div class="form">
             <form action="">
                 <div class="form-header">
@@ -21,50 +30,70 @@
 
                 <div class="input-group">
                     <div class="input-box">
-                        <label for="name"> Nome: </label>
+                        <label for="name">Nome:</label>
                         <input id="name" type="text" name="name" placeholder="Escreva seu nome" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="email"> E-mail </label>
-                        <input id="email" type="email" name="email" placeholder="Escreva seu E-mail" required>
+                        <label for="email">E-mail:</label>
+                        <input id="email" type="email" name="email" placeholder="Escreva seu e-mail" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="name">Data do evento</label>
-                        <input id="Date" type="date" name="date" required>
+                        <label for="date">Data do evento:</label>
+                        <input id="date" type="date" name="date" required>
                     </div>
+
                     <div class="input-box">
-                        <label for="tel"> Telefone: </label>
-                        <input id="Telefone" type="tel" name="Telefone" placeholder="(xx) xxxx-xxxx" required>
+                        <label for="convidados">Número de convidados:</label>
+                        <input id="convidados" type="number" name="convidados" required>
                     </div>
                 </div>
 
                 <div class="gender-inputs">
                     <div class="gender-title">
-                        <h2>Tipo de evento: </h2>
+                        <h2>Tipo de evento:</h2>
                     </div>
 
                     <div class="gender-group">
                         <div class="gender-input">
-                            <input type="radio" id="famale" name="gender">
-                            <label for="famale">Casamento</label>
+                            <input type="radio" id="casamento" name="eventType" value="Casamento">
+                            <label for="casamento">Casamento</label>
                         </div>
+                        <div class="gender-input">
+                            <input type="radio" id="aniversario" name="eventType" value="Aniversário">
+                            <label for="aniversario">Aniversário</label>
+                        </div>
+                        <div class="gender-input">
+                            <input type="radio" id="corporativo" name="eventType" value="Corporativo">
+                            <label for="corporativo">Corporativo</label>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h2>Tipo de cardápio:</h2>
+                    </div>
+
+                    <div class="gender-group">
                         <div class="gender-input">
-                            <input type="radio" id="male" name="gender">
-                            <label for="male">Aniversario</label>
+                            <input type="radio" id="churrasco" name="menuType" value="Churrasco">
+                            <label for="churrasco">Churrasco</label>
                         </div>
                         <div class="gender-input">
-                            <input type="radio" id="other" name="gender">
-                            <label for="other">Corporativo</label>
-                            
+                            <input type="radio" id="coquetel" name="menuType" value="Coquetel Premium">
+                            <label for="coquetel">Coquetel Premium</label>
+                        </div>
+                        <div class="gender-input">
+                            <input type="radio" id="festival" name="menuType" value="Festival de Massas">
+                            <label for="festival">Festival de Massas</label>
                         </div>
                     </div>
                 </div>
 
                 <div class="continue-button">
-                    <button>Calcular</button>
+                    <button type="button" onclick="calcularOrcamento()">Calcular</button>
                 </div>
             </form>
         </div>
