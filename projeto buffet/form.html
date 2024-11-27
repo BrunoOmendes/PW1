@@ -10,7 +10,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <div class="container">
+    <header>
+        <div class="container">
+            <div class="logo"><img src="images/Logo.jpg" alt="" width="230" height="130"></div>
+            <div class="menu">
+                <nav>
+                    <a href="#">GALERIA</a>
+                    <a href="#">
+                        SOBRE NÓS
+                    </a>
+                    <a href="#">
+                        CARDÁPIO
+                    </a>
+                    <a href="#">
+                        CONTATO
+                    </a>
+                </nav>
+            </div>
+            <div class="sociais">
+                <button><i class="fa-brands fa-instagram"></i></button>
+                <button><i class="fa-brands fa-youtube"></i></button>
+                <button><i class="fa-brands fa-x-twitter"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="divisao"></div>
+    <div class="containerf">
         <div class="form-image">
             <div class="textoimagem">
                 <p>O custo do orçamento é de:</p>
@@ -82,8 +107,8 @@
                             <label for="churrasco">Churrasco</label>
                         </div>
                         <div class="gender-input">
-                            <input type="radio" id="coquetel" name="menuType" value="Coquetel Premium">
-                            <label for="coquetel">Coquetel Premium</label>
+                            <input type="radio" id="feijoada" name="menuType" value="Feijoada">
+                            <label for="feijoada">Feijoada</label>
                         </div>
                         <div class="gender-input">
                             <input type="radio" id="festival" name="menuType" value="Festival de Massas">
@@ -92,11 +117,73 @@
                     </div>
                 </div>
 
-                <div class="continue-button">
+                <div class="Calcular-button">
                     <button type="button" onclick="calcularOrcamento()">Calcular</button>
                 </div>
             </form>
         </div>
     </div>
+
+    <footer>
+
+        <div class="interface">
+            <section class="linha1">
+                <h2>Quer saber mais sobre nosso trabalho?</h2>
+                <p>Se inscreva em no organizador de buffet e festas e receba as ultimas atualizações</p>
+                <form action="">
+                    <input type="email" name="" id="">
+                    <input type="submit" value="Cadastrar">
+                </form>
+            </section>
+
+            <section class="linha2">
+                <div class="conteudofooter">
+                    <img src="./images/Logo.jpg" alt="logotipo blessed buffet"width="230" height="130">
+                    <p>"Pois, sabendo que o Senhor estava comigo, criei coragem. Levanto os meus olhos para os montes e pergunto: De onde me vem o socorro? O meu socorro vem do Senhor, que fez os céus e a terra."</p>
+                </div>
+
+                <div class="conteudofooter">
+                    <h3>Links úteis</h3>
+                    <div class="linksfooter">
+                        <a href="#">Sobre a organização</a>
+                        <a href="#">Creditos aos criadores do site</a>
+                    </div>
+                </div>
+
+                <div class="conteudofooter">
+                    <h3>Serviços</h3>
+                    <div class="linksfooter">
+                        <a href="#">Cardápio</a>
+                        <a href="#">Galeria</a>
+                        <a href="">Calcule os gastos</a>
+                    </div>
+                </div>
+
+                <div class="conteudofooter">
+                    <h3>Suporte</h3>
+                    <div class="linksfooter">
+                        <a href="#">Mande um e-mail</a>
+                        <a href="#">Reclame aqui</a>
+                        <a href="">FAQ</a>
+                    </div>
+                </div>
+
+                <div class="footersocial">
+                    <h3>Nossas outras redes sociais</h3>
+                    <a href=""><button><i class="bi bi-facebook"></i></button></a>
+                    <a href=""><button><i class="bi bi-whatsapp"></i></button></a>
+                    <a href=""><button><i class="bi bi-telegram"></i></button></a>
+                    <div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="linha3">
+                <p>Blessed Buffet &copy; todos os direitos reservados</p>
+            </section>
+        </div>
+
+    </footer>
+
 </body>
 </html>
